@@ -262,10 +262,14 @@ public final class LineageSettings {
                 }
             }
 
+            /* BRINGUP */
+            /* cp.query() args are the issue */
+            return null;
+            /*
             Cursor c = null;
             try {
                 c = cp.query(cr.getPackageName(), mUri, SELECT_VALUE, NAME_EQ_PLACEHOLDER,
-                        new String[]{name}, null, null);
+                        new String[]{name}, null);
                 if (c == null) {
                     Log.w(TAG, "Can't get key " + name + " from " + mUri);
                     return null;
@@ -286,6 +290,7 @@ public final class LineageSettings {
             } finally {
                 if (c != null) c.close();
             }
+            */
         }
     }
 

@@ -226,8 +226,12 @@ public class LineageSettingsProvider extends ContentProvider {
                                 + settingsValue);
                     }
 
+                    /* BRINGUP */
+                    /*
                     final List<String> tiles = Settings.Secure.getDelimitedStringAsList(
                             contentResolver, settingsKey, ",");
+                    */
+                    final List<String> tiles = new java.util.ArrayList<String>();
 
                     if (!tiles.contains(QSConstants.TILE_DND)) {
                         tiles.add(QSConstants.TILE_DND);
